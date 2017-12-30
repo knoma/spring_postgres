@@ -1,0 +1,15 @@
+#
+# [ Database Configuration Section ]
+#
+
+spring:
+  datasource:
+    url: jdbc:postgresql://kserver.local:5432/knoma
+    username: knoma
+    password: knoma
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+      naming_strategy: org.hibernate.cfg.EJB3NamingStrategy
+server:
+  port: 9095
